@@ -3,7 +3,7 @@ const Book = require('../models/Book');
 // Import du module 'fs' pour accéder au système de fichiers
 const fs = require('fs');
 
-// GET - Récupère tous les livres
+// GET -- Récupère tous les livres
 exports.getAllBooks = (req, res, next) => {
   Book.find()
     .then((books) => res.status(200).json(books)) // Répond avec un tableau de livres en format JSON
